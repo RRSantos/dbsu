@@ -19,7 +19,15 @@ dbsu uses the configurations key/value pair shown below:
  
 ###connectionStrings
 dbsu uses the connection strings according to the directory hierarchy on the **rootDbPath** path. 
+Example:
+For the directory structure shown below
 - rootDbPath
  - **MyDatabase1**
    - Scripts
-     - script1.sql
+     - script-1.sql
+   - Procedures
+     - proc-1.sql
+  - **MyDatabase2**
+   - Scripts
+     - script-1.sql
+the connectionString names in the configuration should be **MyDatabase1** and **MyDatabase2**
