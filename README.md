@@ -12,7 +12,6 @@ It's an easy and customizable way to version your MSSQL database.
 4. Insert (or alter) a configuration file of your project (App.config or Web.config)
   
 ##Configuration file
-___
 ###appSettings section
 dbsu uses the configurations key/value pair shown below:
 - **rootDbPath**: Indicates de root path where the scripts will be loaded. It could be relative ou full path.
