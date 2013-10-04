@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbsu.core", "dbsu.core\dbsu.core.csproj", "{A101E5A3-9EF0-40A2-AE95-8615D641C37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbsu.core.tests", "dbsu.core.tests\dbsu.core.tests.csproj", "{0F2779C0-8635-4B1E-94AD-6E52EF9B1795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbsu.core.consoleApp", "dbsu.core.consoleApp\dbsu.core.consoleApp.csproj", "{F104ADE0-B82A-4590-9BB3-64261940A5E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A101E5A3-9EF0-40A2-AE95-8615D641C37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A101E5A3-9EF0-40A2-AE95-8615D641C37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A101E5A3-9EF0-40A2-AE95-8615D641C37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A101E5A3-9EF0-40A2-AE95-8615D641C37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2779C0-8635-4B1E-94AD-6E52EF9B1795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2779C0-8635-4B1E-94AD-6E52EF9B1795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2779C0-8635-4B1E-94AD-6E52EF9B1795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2779C0-8635-4B1E-94AD-6E52EF9B1795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F104ADE0-B82A-4590-9BB3-64261940A5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F104ADE0-B82A-4590-9BB3-64261940A5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F104ADE0-B82A-4590-9BB3-64261940A5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F104ADE0-B82A-4590-9BB3-64261940A5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
