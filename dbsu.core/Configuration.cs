@@ -2,7 +2,7 @@
 
 namespace dbsu.core
 {
-    static class Configuration
+    internal static class Configuration
     {
         private static string NoRootDbPath = "Configuração [rootDbPath] não encontrada";
         private static string ConnectionStringNotFound = "Connection string [{0}] não encontrada";
@@ -29,9 +29,9 @@ namespace dbsu.core
             throw new ConfigurationErrorsException(string.Format(ConnectionStringNotFound, name));
         }
 
-        public static string GetSchemaScriptPathName()
+        public static string GetSchemaScriptFolderName()
         {
-            var schemaScriptPathName = ConfigurationManager.ConnectionStrings["schemaScriptPathName"];
+            var schemaScriptPathName = ConfigurationManager.ConnectionStrings["schemaScriptFolderName"];
 
             if (schemaScriptPathName != null)
                 return schemaScriptPathName.ConnectionString;

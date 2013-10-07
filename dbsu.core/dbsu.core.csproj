@@ -47,6 +47,7 @@
     <Compile Include="DTO\DbScript.cs" />
     <Compile Include="DbFileManager.cs" />
     <Compile Include="DTO\DbScriptContainer.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\NullLogger.cs" />
     <Compile Include="Persistence\IPersistence.cs" />

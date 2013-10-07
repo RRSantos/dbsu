@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace dbsu.core.Logging
 {
-    class NullLogger:ILogger
+    internal class NullLogger:ILogger
     {
         
         public void LogInfo(string message)

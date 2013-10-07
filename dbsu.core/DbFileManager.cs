@@ -2,10 +2,12 @@
 using System.IO;
 using System.Linq;
 using dbsu.core.DTO;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("dbsu.core.tests")]
 namespace dbsu.core
 {
-    public class DbFileManager
+    internal class DbFileManager
     {
         private readonly string rootPath;
 

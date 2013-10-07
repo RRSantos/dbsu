@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
 
 
@@ -12,6 +8,7 @@ namespace dbsu.core.Persistence
     {
         private readonly SqlConnection connection;
         private readonly string[] scriptSeparator = new string[] { "GO", "Go", "gO", "go" };
+        private bool disposed;
 
         private void openConnection()
         {
@@ -56,9 +53,24 @@ namespace dbsu.core.Persistence
             
         }
 
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    this.connection.Dispose();
+                }
+            }
+
+            disposed = true;
+        }
+
         public void Dispose()
         {
-            this.connection.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+            
         }
 
         

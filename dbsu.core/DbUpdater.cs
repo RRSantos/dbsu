@@ -16,7 +16,7 @@ namespace dbsu.core
         public DbUpdater()
         {
             this.dbRootPath = Configuration.GetRootDbPath();
-            this.schemaScriptPathName = Configuration.GetSchemaScriptPathName();
+            this.schemaScriptPathName = Configuration.GetSchemaScriptFolderName();
             this.dbFileManager = new DbFileManager(this.dbRootPath);
         }
 
