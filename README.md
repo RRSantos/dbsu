@@ -1,7 +1,7 @@
 #dbsu
 
 
-*dbsu* stands for **d**ata**b**ase **s**chema **u**pdater.
+*dbsu* stands for **d**ata*b*ase **s**chema **u**pdater.
 It's an easy and customizable way to version your MSSQL database.
 
 ##Getting started
@@ -32,3 +32,6 @@ For the directory structure shown below
          - script-1.sql
 
 the connectionString names in the configuration should be **MyDatabase1** and **MyDatabase2**
+
+
+//TODO:Utilizar esta documentação como exemplo: https://github.com/nlog/nlog/wiki
