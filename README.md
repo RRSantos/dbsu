@@ -75,35 +75,31 @@ Suppose we have this directory structure:
 
 
 - AConnection-2
-  -  AProcedures-2
-    - AProc-2.sql
-    - BProc-1.sql
-  - BScripts-1
-    - AScript.sql
-    - BScript-1.sql
-    - XScript.sql
+    -  AProcedures-2
+        - AProc-2.sql
+        - BProc-1.sql
+    - BScripts-1
+        - AScript.sql
+        - BScript-1.sql
+        - XScript.sql
 - BConnection-1
-  -  AProcedures
-    - A.sql    
-  - BScripts-1
-    - A.sql
+    -  AProcedures
+        - A.sql    
+    - BScripts-1
+        - A.sql
     
 So, dbsu will read and execute the scripts in the following order:
 
 - BConnection-1 
-  - BScripts-1 
-    - A.sql 
-  -  AProcedures 
-    - A.sql
+    - BScripts-1 
+        - A.sql 
+    -  AProcedures 
+        - A.sql
 - AConnection-2 
-  - BScripts-1     
-    - BScript-1.sql 
-    - AScript.sql  *(for non-suffixed names, dbsu considers the alphabetical order)*
-    - XScript.sql
-  -  AProcedures-2
-    - BProc-1.sql
-    - AProc-2.sql
-    
-  
-  
-    
+    - BScripts-1     
+        - BScript-1.sql 
+        - AScript.sql  *(for non-suffixed names, dbsu considers the alphabetical order)*
+        - XScript.sql
+    -  AProcedures-2
+        - BProc-1.sql
+        - AProc-2.sql
