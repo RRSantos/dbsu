@@ -68,4 +68,42 @@ So, we need to insert two connection strings: `MyConnection1` and `MyConnection2
 ```
 
 ##Ordered execution
-TODO!
+By default, dbsu executes all the scripts (in all subfolders) following an alphabetical order. If you need to change this order (including connection subfolders) just suffix the subfolders/scripts with a dash and a number to indicate the desired order. 
+
+*Example:* 
+Suppose we have this directory structure:
+
+
+- AConnection-2
+  -  AProcedures-2
+    - AProc-2.sql
+    - BProc-1.sql
+  - BScripts-1
+    - AScript.sql
+    - BScript-1.sql
+    - XScript.sql
+- BConnection-1
+  -  AProcedures
+    - A.sql    
+  - BScripts-1
+    - A.sql
+    
+So, dbsu will read and execute the scripts in the following order:
+
+- BConnection-1 
+  - BScripts-1 
+    - A.sql 
+  -  AProcedures 
+    - A.sql
+- AConnection-2 
+  - BScripts-1     
+    - BScript-1.sql 
+    - AScript.sql  *(for non-suffixed names, dbsu considers the alphabetical order)*
+    - XScript.sql
+  -  AProcedures-2
+    - BProc-1.sql
+    - AProc-2.sql
+    
+  
+  
+    
