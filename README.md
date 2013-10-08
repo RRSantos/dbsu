@@ -1,7 +1,12 @@
 #dbsu - database schema updater
 dbsu is a .NET (C#) application that lets you version your (MSSQL for a while) databases.
 
-##Getting started - The easy way
+##Getting started 
+  - [The easy way](#the-easy-way)
+  - [Configuration reference](#configuration-reference)
+
+
+##The easy way  
 ####1. InitDB.sql
   - Run `InitDB.sql` on the database you want version to prepare it for dbsu.
 
@@ -19,20 +24,16 @@ dbsu is a .NET (C#) application that lets you version your (MSSQL for a while) d
 
 
 ## Configuration reference
-- ConnectionName structure
-- rootDbPath
-- schemaScriptFolderName
-- connectionStrings
+- [ConnectionName structure](#connectionname-structure)
+- [rootDbPath](#rootdbpath)
+- [schemaScriptFolderName](#schemascriptfoldername)
+- [connectionStrings](#connectionstrings)
+- [Ordered execution](#ordered-execution)
 
 
-##Connection name rule
+##ConnectionName structure
 TODO!
 
-##Ordered execution
-TODO!
-
-
-##Configuration
 ###rootDbPath
 Insert the `rootDbPath` settings to tells dbsu where is the root of all sql scripts.
 ```XML
@@ -44,7 +45,7 @@ Insert the `rootDbPath` settings to tells dbsu where is the root of all sql scri
 TODO!
 
 
-###ConnectionString
+###connectionStrings
 For each folder in `rootDbPath` add a connectionString with name equals to the folder name.
 
 *Example:* Suppose `rootDbPath` is equal to `C:\MyScripts` and we have  the following directory structure:
@@ -65,3 +66,6 @@ So, we need to insert two connection strings: `MyConnection1` and `MyConnection2
   <add name="MyConnection2" connectionString="connection.string.to.my.connection2"/>
 </connectionStrings>
 ```
+
+##Ordered execution
+TODO!
