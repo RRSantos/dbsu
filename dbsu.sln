@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbsu.core", "dbsu.core\dbsu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbsu.core.tests", "dbsu.core.tests\dbsu.core.tests.csproj", "{0F2779C0-8635-4B1E-94AD-6E52EF9B1795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbsu.core.consoleApp", "dbsu.core.consoleApp\dbsu.core.consoleApp.csproj", "{F104ADE0-B82A-4590-9BB3-64261940A5E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbsu.console", "dbsu.console\dbsu.console.csproj", "{F104ADE0-B82A-4590-9BB3-64261940A5E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
