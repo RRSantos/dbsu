@@ -2,7 +2,7 @@
 
 
 #Overview
-dbsu is a .NET (C#) application that lets you version your (MSSQL for a while) databases.
+dbsu is a .NET (C#) application that lets you version your (MSSQL up to now) databases.
 
 #Getting started 
   - [The easy way](#the-easy-way)
